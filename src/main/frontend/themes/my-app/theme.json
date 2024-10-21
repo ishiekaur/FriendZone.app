@@ -1,0 +1,9 @@
+{
+  "lumoImports" : [ "typography", "color", "spacing", "badge", "utility" ],
+  "assets" : {
+    "@fontsource/ibm-plex-sans" : {
+      "*.css" : "@fontsource/ibm-plex-sans",
+      "files/*" : "@fontsource/ibm-plex-sans/files"
+    }
+  }
+}
