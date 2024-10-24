@@ -119,6 +119,11 @@
             <artifactId>google-http-client-jackson2</artifactId>
             <version>1.45.0</version> <!-- Use the latest version -->
         </dependency>
+        <dependency>
+            <groupId>io.github.cdimascio</groupId>
+            <artifactId>java-dotenv</artifactId>
+            <version>5.2.2</version> <!-- Check for the latest version -->
+        </dependency>
     </dependencies>
 
     <repositories>

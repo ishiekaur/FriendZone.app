@@ -113,12 +113,8 @@ public class MatchmeView extends Composite<VerticalLayout> {
         }
     }
 
+
     public MatchmeView() {
-        // Initialize the OpenAI conversation
-        conversation = new OpenAIConversation(
-                "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",
-                "gpt-4o-mini"
-        );
 
         userName = new TextField("Choose a username:");
         userName.setRequiredIndicatorVisible(true);
@@ -173,3 +169,4 @@ public class MatchmeView extends Composite<VerticalLayout> {
         getContent().getStyle().set("flex-grow", "1");
     }
 }
+
