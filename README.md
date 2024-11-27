@@ -1,51 +1,47 @@
-# Custom project from Hilla
+FriendZone.app
 
-This project can be used as a starting point to create your own Hilla application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+FriendZone is a web application designed to match users based on their location and interests, and provide curated suggestions for meeting places. Built using Java and Vaadin, this project integrates with OpenAI's GPT API for  recommendations and Google Sheets API for profile data management.
 
-## Running the application
+The featurs include
+Displays user details including name, age, gender, location, and interests.
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+Match Me:
+Matches users based on location and shared interests.
+Utilizes OpenAI's GPT API for intelligent matching.
 
-You can also import the project to your IDE of choice as you would with any
-Maven project.
+Plan Ideas:
+Suggests personalized coffee shops, bars, or restaurants where matched users can meet, powered by GPT.
+Google Sheets Integration
+Profiles are stored and retrieved dynamically via Google Sheets API.
 
-## Deploying to Production
+Most Interesting Part of the Build
+The most fascinating part of the project was integrating OpenAI's GPT API to handle intelligent user matching and generate plan ideas. It was exciting to see how AI could be used to interpret user data and generate meaningful, human-like responses that add value to the user experience.
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
+Most Challenging Part of the Build
+The biggest challenge was implementing the Google Sheets API. Setting up the credentials, ensuring secure and authenticated access, and dynamically reading and filtering data from the sheet required careful planning and debugging. Ensuring that it seamlessly integrated into the Vaadin-based UI was also tricky but rewarding.
 
-Once the JAR file is built, you can run it using
-`java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTE, replace
-`myapp-1.0-SNAPSHOT.jar` with the name of your jar).
+Java Concepts Learned
+Through this project, we explored several important Java concepts, including:
+API Integration
+Learned how to interact with external APIs (OpenAI and Google Sheets).
+Used Java to dynamically generate HTML and CSS for the Vaadin frontend.
+Dealt with API calls and response handling to keep the UI responsive.
 
-## Project structure
+External Code and References
 
-<table style="width:100%; text-align: left;">
-  <tr><th>Directory</th><th>Description</th></tr>
-  <tr><td><code>src/main/frontend/</code></td><td>Client-side source directory</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.html</code></td><td>HTML template</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>index.ts</code></td><td>Frontend 
-entrypoint, bootstraps a React application</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>routes.tsx</code></td><td>React Router routes definition</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>MainLayout.tsx</code></td><td>Main 
-layout component, contains the navigation menu, uses <a href="https://hilla.dev/docs/react/components/app-layout">
-App Layout</a></td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>views/</code></td><td>UI view 
-components</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>themes/</code></td><td>Custom  
-CSS styles</td></tr>
-  <tr><td><code>src/main/java/&lt;groupId&gt;/</code></td><td>Server-side 
-source directory, contains the server-side Java views</td></tr>
-  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>Application.java</code></td><td>Server entry-point</td></tr>
-</table>
+Google Sheets API Integration
+The code to set up and use the Google Sheets API was adapted from the official Google Sheets API documentation and tutorials. Below are the key references:
 
-## Useful links
+Google Sheets API Java Quickstart
+Official setup guide and sample code:
+Google Sheets API Java Quickstart
 
-- Read the documentation at [hilla.dev/docs](https://hilla.dev/docs/).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin/hilla).
+OAuth 2.0 Authentication
+Used Google's client libraries to handle OAuth authentication securely.
+Library: google-api-client, google-oauth-client
+
+Vaadin Framework
+The project uses the Vaadin framework for building the frontend UI. Documentation and examples were referenced from:
+Vaadin Official Documentation
+
+We also used Google tutorials, We got the dependencies from the the framework page. To make our code better we also used AI. We also used Stack Overflow and Google Workspace Guides.
