@@ -45,3 +45,49 @@ The project uses the Vaadin framework for building the frontend UI. Documentatio
 Vaadin Official Documentation
 
 We also used Google tutorials, We got the dependencies from the the framework page. To make our code better we also used AI. We also used Stack Overflow and Google Workspace Guides.
+
+Technology Stack and Citations with website.
+
+Frameworks and Libraries
+
+Vaadin: For building a dynamic web interface.
+
+Vaadin Official Documentation
+
+Vaadin Routing and Navigation
+
+OpenAI GPT: Used for generating matches and plan ideas.
+
+OpenAI API Documentation
+
+Examples of OpenAI GPT Integration
+
+Google Sheets API: For storing and retrieving user profiles.
+
+Google Sheets API Documentation
+
+Google Sheets API Java Quickstart
+
+Dotenv: For managing environment variables.
+
+Dotenv for Java
+
+Other Java Features
+
+String Manipulation: Used to parse user profile and location data.
+
+String API Documentation
+
+Collections API: Utilized for managing profile data in lists.
+
+Collections Framework Documentation
+
+Vaadin Form Components
+
+TextField, CheckboxGroup, RadioButtonGroup components usage based on Vaadin's Form Layout Documentation.
+
+Specific Methods and Features
+
+Form Input Validation
+
+Validation logic for empty fields inspired by error-handling practices in Vaadin Error Handling Documentation.
